@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  mysql-net-core-api:
+    container_name: mysql-net-core-api
+    image: mysql:8
+    environment: 
+      - MYSQL_ROOT_PASSWORD="netcoreapi"
+      - MYSQL_USER="systemApiUser"
+      - MYSQL_PASSWORD="systemApiPassword"
+    ports:
+      - 3306:3306
