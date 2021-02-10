@@ -37,9 +37,34 @@ Dentro da pasta src digitar o comando abaixo:
 
 # 1 Configurando primeira classlib nos padrões .Net com a camada de dominio da aplicação.
 
+## A Arquitetura do nosso sistema terá 4 camadas:
+
+### Aplicação (WebAPI)
+
+Que será traduzida dentro da classLib Application.
+
+### Dominio
+
+Camada responsável pelo dominio do negócio. Será taduzoda como Domain.
+
+### Infraestrutura
+
+Camanda que tem como responsabilidade se comunicar com as interfaces externas da aplicação, banco de dados proxys, autenticadores.
+Será traduzida como CrossCutting (Depêndencias de outros sistemas)
+e Data para a camada que irá acessar nosso banco de dados cache e etc.
+
+### Serviços
+
+Os serviços que nossa aplicação utilizará para consumo interno da aplicação, como conectores de bancos de dados e outros.
+
+
+
 Dentro da pasta src vamos criar uma classlib
 
     $ dotnet new classlib -n Domain -o Api.Domain -f netcoreapp3.1
+    $ dotnet new classlib -n CrossCutting -o Api.CrossCutting -f netcoreapp3.1
+    $ dotnet new classlib -n Data -o Api.Data -f netcoreapp3.1
+    $ dotnet new classlib -n Service -o Api.Service -f netcoreapp3.1
 
 Onde os parametros para esta lib são
 
@@ -50,6 +75,9 @@ Onde os parametros para esta lib são
 ## Após isso adicionar essa classlib na solution:
 
     $ dotnet sln add .\Api.Domain\
+    $ dotnet sln add .\Api.CrossCutting\
+    $ dotnet sln add .\Api.Data\
+    $ dotnet sln add .\Api.Service\
 
 E atualizar a solution com o comando ```$ dotnet restore```.
 
