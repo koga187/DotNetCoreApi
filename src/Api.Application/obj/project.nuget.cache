@@ -1,15 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Se1TinNt2TYA6WFrMaJ4BcL2DmXsD8oOW4GPvaVVpd1KkMsVQ2FpzJQD08bfTJlSK2KWA1p81GL9sH/RxwQ6Jg==",
+  "dgSpecHash": "AAYckq8oB2M3TgnhQEejeTJ+5c6odecrlTfXsxkqTcxfJ1wBXyKYMIEe6BzmRiLSlFuzUFJ9utZskpmT8Vqtig==",
   "success": true,
-  "projectFilePath": "B:\\WindowsProjects\\NetCoreApi\\src\\Api.Application\\application.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\bruno\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
-    "C:\\Users\\bruno\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
-    "C:\\Users\\bruno\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
-    "C:\\Users\\bruno\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
-    "C:\\Users\\bruno\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
-    "C:\\Users\\bruno\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
-  ],
+  "projectFilePath": "B:\\WindowsProjects\\NetCoreApi\\src\\Api.Application\\Application.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }
