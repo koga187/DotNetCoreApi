@@ -33,3 +33,24 @@ O parametros:
 Dentro da pasta src digitar o comando abaixo:
 
     $ dotnet sln add .\Api.Application\
+
+
+# 1 Configurando primeira classlib nos padrões .Net com a camada de dominio da aplicação.
+
+Dentro da pasta src vamos criar uma classlib
+
+    $ dotnet new classlib -n Domain -o Api.Domain -f netcoreapp3.1
+
+Onde os parametros para esta lib são
+
+    - -n Nome da classlib
+    - -o pasta que será criada com o conteudo da lib
+    - -f versão do .net framework que será utilizada (.netcore 3.1.1 no nosso caso.)
+
+## Após isso adicionar essa classlib na solution:
+
+    $ dotnet sln add .\Api.Domain\
+
+E atualizar a solution com o comando ```$ dotnet restore```.
+
+
